@@ -1,0 +1,90 @@
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+}
+
+.banner-container div {
+    width: 100%;
+}
+
+.info-banner {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.info-banner div {
+    text-align: start;
+    margin: 20px 30px;
+}
+
+.info-banner> :nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.info-banner> :nth-child(2) {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #fcc8c8, 0px 0px 0px #222822, 0 0 1px #465546;
+    /* Glow effect */
+
+}
+
+.info-banner> :nth-child(3) {
+    font-size: 1.3rem;
+
+}
+
+.imageBanner {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagediv {
+    width: 200px;
+    height: 350px;
+    background-color: #fcc8c8;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 300px 120px 70px 210px;
+}
+
+.imagediv img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 10px;
+    left: 150px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px, 100px;
+
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    object-fit:cover;
+    background-color: red;
+}
