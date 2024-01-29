@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Header.css";
+import "./CSS/Header.css";
 import email from "../assets/email.png";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";

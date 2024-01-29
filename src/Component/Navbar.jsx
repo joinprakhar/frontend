@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Navbar.css";
+import "./CSS/Navbar.css";
 import Banner from "./Banner";
 import Skills from "./Skills";
 import Projects from "./Projects";
@@ -54,10 +54,10 @@ export function Navbar() {
           </ul>
         </div>
       </nav>
-      <Banner />
+      {/*<Banner />
       <span style={{ textAlign: "center" }}>--Skills--</span>
       <Skills />
-      <span style={{ textAlign: "center" }}>--Projects--</span>
+      <span style={{ textAlign: "center" }}>--Projects--</span> */}
       <Projects />
     </div>
   );

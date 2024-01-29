@@ -1,3 +1,4 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
 * {
  margin: 0;
  padding: 0;
@@ -42,3 +43,21 @@
     transform: rotate(360deg);
   }
 }
+/*  */
+
+.product-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+}
+
+.product-container {
+  padding: 0 10px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* styles.css */
+
+
