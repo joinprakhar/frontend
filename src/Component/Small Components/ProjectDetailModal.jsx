@@ -39,7 +39,27 @@ const ProjectDetailModal = () => {
           </Carousel>
         </div>
       </div>
-      <div className="project-detail-detail-box"></div>
+      <div className="project-detail-detail-box">
+        <div>Project Name</div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
+          delectus error quasi, dicta corporis ex alias ea amet, tempora rem
+          labore cum ad mollitia. Repellendus in veniam quasi provident, eum
+          maxime dicta, neque voluptatem nemo maiores impedit aliquid? Ipsa
+          dolor sunt ex eveniet maiores, fuga assumenda neque praesentium
+          distinctio?
+        </div>
+        <div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, dolore
+          corporis! Distinctio corporis doloremque dolore a nihil harum beatae
+          laborum! Placeat distinctio voluptatum dolor pariatur praesentium
+          voluptate dolorem similique? Optio.
+        </div>
+        <div>
+          <button>sfweferfe</button>
+          <button>sdfsd</button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,12 +1,26 @@
+import { useState } from "react";
 import "./App.css";
-import Carousel from "./Component/Small Components/Coursel";
+import Modal from "./Component/Small Components/Modal";
 import MinorProject from "./Component/Small Components/MinorProject";
 import ProjectDetailModal from "./Component/Small Components/ProjectDetailModal";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="App">
-      <ProjectDetailModal />
+      <button onClick={openModal}>Open Modal</button>
+      <Modal isOpen={isOpen} onClose={closeModal}>
+        <ProjectDetailModal />
+      </Modal>
     </div>
   );
 }

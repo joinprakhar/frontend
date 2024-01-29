@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  max-width: 700px;
+  max-height: 400px;
 }
 
 .project-detail-image-box {
@@ -20,5 +21,12 @@
 }
 
 .project-detail-detail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   width: 55%;
+  height: 432px;
+  margin: 10px;
+  padding: 10px;
 }
