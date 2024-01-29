@@ -1,0 +1,24 @@
+.project-detail-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-detail-image-box {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.project-detail-image-box img {
+  height: 300px;
+}
+
+.project-detail-image-carousel {
+  width: auto !important;
+}
+
+.project-detail-detail-box {
+  width: 55%;
+}
