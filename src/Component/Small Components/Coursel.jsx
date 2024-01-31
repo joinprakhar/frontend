@@ -17,9 +17,21 @@ const Carousel = ({ children }) => {
     }
   };
 
+  const handleScroll = (event) => {
+    // Get the current scroll position
+    const scrollLeft = event.target.scrollLeft;
+
+    // Check if the scroll direction is towards the right
+    if (scrollLeft > boxRef.current.scrollLeft) {
+      btnPressNext();
+    } else {
+      btnPressPrev();
+    }
+  };
+
   return (
     <div className="product-carousel">
-      <div className="product-container" ref={boxRef}>
+      <div className="product-container" ref={boxRef} onScroll={handleScroll}>
         {children}
       </div>
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
