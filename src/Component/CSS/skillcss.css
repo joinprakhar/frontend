@@ -1,27 +1,44 @@
 .skillpage {
-width: auto;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  mix-blend-mode: normal;
+  margin: 5px;
 }
 
-
-.ks-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 15px;
-    margin: 5px 10px;
-    background-color: aqua;
-    border-radius: 25px;
+.ks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 5px 10px;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #161316,
+    #232026,
+    #2d2e37,
+    #333e49,
+    #39505e
+  );
+  border-radius: 10px;
 }
 
-.ks-container img{
-    width: 20px;
-    height: 20px;
-    object-fit:cover;
-    margin: 3px;
+.ks-container:hover {
+  box-shadow: 0 0 5px #df9114;
+}
+.ks-container img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin: 3px 5px;
+}
+
+.ks-container span {
+  color: #efecec;
+  font-weight: 500;
 }

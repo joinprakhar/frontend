@@ -1,33 +1,14 @@
 import React from "react";
 import "./CSS/skillcss.css";
+import { skillpoints } from "../assets/data.js";
 
 const Skills = () => {
-  const skillpoints = [
-    { name: "Html", image: "", value: "" },
-    { name: "Css", image: "", value: "" },
-    { name: "Javascript", image: "", value: "" },
-    { name: "React", image: "", value: "" },
-    { name: "Node JS", image: "", value: "" },
-    { name: "Express JS", image: "", value: "" },
-    { name: "MongoDB", image: "", value: "" },
-    { name: "MySQL", image: "", value: "" },
-    { name: "GIt and GitHub", image: "", value: "" },
-    { name: "Doker", image: "", value: "" },
-    { name: "Chartjs", image: "", value: "" },
-  ];
-
+  console.log(skillpoints);
   return (
     <div className="skillpage">
       {skillpoints &&
         skillpoints.map((ele) => {
-          return (
-            <KeySkills
-              name={ele?.name}
-              image={
-                "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
-              }
-            />
-          );
+          return <KeySkills name={ele?.name} image={ele?.image} />;
         })}
     </div>
   );

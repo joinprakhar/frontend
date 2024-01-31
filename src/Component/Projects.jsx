@@ -1,23 +1,34 @@
 import React from "react";
 import project from "../assets/project.jpg";
-import live from "../assets/live.png";
-import github from "../assets/github.png";
 import "./CSS/projects.css";
+import Carousel from "./Small Components/Coursel";
+import { MiniProject } from "../assets/data";
 const Projects = () => {
   return (
     <>
-      <div className="project-slider">
-        {/* <div>
-          <i class="fa fa-toggle-left"></i>
-        </div> */}
-        <div className="project-slide">
-          <MinorProject />
-        </div>
-        {/* <div>
-          <i class="fa fa-toggle-right"></i>
-        </div> */}
+      <div className="project-container">
+        <Carousel>
+          {MiniProject &&
+            MiniProject.map((ele) => {
+              return <MinorProject />;
+            })}
+        </Carousel>
       </div>
-      <div className="project-container">Project Container</div>
+      <h2 className="heading-div">Major Projects</h2>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          margin: "10px",
+          justifyContent: "center",
+        }}
+      >
+        {MiniProject &&
+          MiniProject.map((ele) => {
+            return <MajorProject />;
+          })}
+      </div>
     </>
   );
 };
@@ -69,8 +80,19 @@ function MinorProject() {
         <a href="https://www.google.com" target="_blank">
           <i title="GitHub" class="fa fa-github"></i>
         </a>
-        <i title="Deployement" class="fa fa-laptop"></i>
+        <a href="https://www.google.com" target="_blank">
+          <i title="Deployement" class="fa fa-laptop"></i>
+        </a>
       </div>
     </div>
   );
+}
+
+{
+  /* <div>
+          {MiniProject &&
+            MiniProject.map((ele) => {
+              return <MajorProject />;
+            })}
+        </div> */
 }

@@ -32,7 +32,7 @@ const Banner = () => {
   return (
     <div className="banner-container">
       <div className="info-banner">
-        <div className="banner-intro">Hi, There. I am</div>
+        <div className="banner-intro">Hi, I am</div>
         <div className="banner-name">{name}&nbsp;</div>
         <div>
           Enthusiastic and motivated <strong>Full Stack Developer</strong>,

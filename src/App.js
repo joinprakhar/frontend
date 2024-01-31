@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import Navbar from "./Component/Navbar";
+
 import Modal from "./Component/Small Components/Modal";
 import MinorProject from "./Component/Small Components/MinorProject";
 import ProjectDetailModal from "./Component/Small Components/ProjectDetailModal";
@@ -17,10 +19,11 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={openModal}>Open Modal</button>
+      <Navbar />
+      {/* <button onClick={openModal}>Open Modal</button>
       <Modal isOpen={isOpen} onClose={closeModal}>
         <ProjectDetailModal />
-      </Modal>
+      </Modal> */}
     </div>
   );
 }

@@ -25,13 +25,23 @@ const Carousel = ({ children }) => {
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
         <div
           onClick={btnPressPrev}
-          style={{ padding: "0", margin: "0 10px", fontSize: "20px" }}
+          style={{
+            padding: "0",
+            margin: "0 10px",
+            fontSize: "20px",
+            color: "white",
+          }}
         >
           <i class="fa fa-toggle-left"></i>
         </div>
         <div
           onClick={btnPressNext}
-          style={{ padding: "0", margin: "0 10px", fontSize: "20px" }}
+          style={{
+            padding: "0",
+            margin: "0 10px",
+            fontSize: "20px",
+            color: "white",
+          }}
         >
           <i class="fa fa-toggle-right"></i>
         </div>

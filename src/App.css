@@ -5,6 +5,11 @@
   box-sizing: border;
 }
 
+.App {
+  background: #16161c;
+  background: linear-gradient(from 180deg, #16161c, #505252);
+}
+
 .product-carousel {
   position: relative;
   overflow: hidden;

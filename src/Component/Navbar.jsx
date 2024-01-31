@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import "./CSS/Navbar.css";
 import Banner from "./Banner";
 import Skills from "./Skills";
 import Projects from "./Projects";
 
-export function Navbar() {
+const Navbar = () => {
   const headerRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -32,41 +32,70 @@ export function Navbar() {
     };
   }, []);
 
+  const scrollToProjects = (id) => {
+    console.log(id);
+    const projectSection = document.getElementById({ id });
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="pageBanner">
-      <nav className="navbar">
-        <div className="navbar-container" ref={headerRef}>
-          <h1 className="logo">Nested Navbar</h1>
-          <button className="navbar-toggle" onClick={toggleNavbar}>
-            <span className="navbar-icon"></span>
-            <span className="navbar-icon"></span>
-            <span className="navbar-icon"></span>
-          </button>
-          <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
-            <NavItem title="Home" link="/" />
-            <NavItem title="About" link="/about" />
-            <NavItem title="Services">
+    <>
+      <div className="pageBanner">
+        <nav className="navbar">
+          <div className="navbar-container" ref={headerRef}>
+            <h1 className="logo">&nbsp;</h1>
+            <button className="navbar-toggle" onClick={toggleNavbar}>
+              <span className="navbar-icon"></span>
+              <span className="navbar-icon"></span>
+              <span className="navbar-icon"></span>
+            </button>
+            <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
+              <NavItem
+                title="Home"
+                link="/"
+                scrollToProjects={scrollToProjects}
+              />
+              <NavItem
+                title="About"
+                link="about"
+                scrollToProjects={scrollToProjects}
+              />
+              <NavItem
+                title="Project"
+                link="project"
+                scrollToProjects={scrollToProjects}
+              />
+
+              {/* <NavItem title="Services">
               <DropdownItem title="Service 1" link="/service1" />
               <DropdownItem title="Service 2" link="/service2" />
               <DropdownItem title="Service 3" link="/service3" />
-            </NavItem>
-            <NavItem title="Contact" link="/contact" />
-          </ul>
-        </div>
-      </nav>
-      {/*<Banner />
-      <span style={{ textAlign: "center" }}>--Skills--</span>
-      <Skills />
-      <span style={{ textAlign: "center" }}>--Projects--</span> */}
-      <Projects />
-    </div>
-  );
-}
+            </NavItem> */}
+              <NavItem title="Contact" link="/contact" />
+            </ul>
+          </div>
+        </nav>
+        <Banner />
 
-function NavItem({ title, link, children }) {
+        <h2 className="heading-div">Skills</h2>
+        <Skills />
+      </div>
+      <h2 className="heading-div">Minor Projects</h2>
+      <Projects />
+    </>
+  );
+};
+
+function NavItem({ title, link, children, scrollToProjects }) {
   return (
     <li className="nav-item">
-      <a href={link} className="nav-link">
+      <a
+        href={`#${link}`}
+        className="nav-link"
+        onClick={() => scrollToProjects(link)}
+      >
         {title}
       </a>
       {children && <ul className="dropdown-menu">{children}</ul>}
@@ -81,3 +110,5 @@ function DropdownItem({ title, link }) {
     </li>
   );
 }
+
+export default Navbar;
