@@ -45,10 +45,10 @@ const Banner = () => {
           <img src={developer} alt="" />
         </div>
         <div className="social">
-          <img src={github} className="icons" />
-          <img src={email} className="icons" />
-          <img src={linkedin} className="icons" />
-          <img src={resume} className="icons" />
+          <img src={github} alt="img" className="icons" />
+          <img src={email} alt="img" className="icons" />
+          <img src={linkedin} alt="img" className="icons" />
+          <img src={resume} alt="img" className="icons" />
         </div>
       </div>
     </div>

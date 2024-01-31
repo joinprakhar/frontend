@@ -82,7 +82,9 @@ const Navbar = () => {
         <h2 className="heading-div">Skills</h2>
         <Skills />
       </div>
-      <h2 className="heading-div">Minor Projects</h2>
+      <h2 id="project" className="heading-div">
+        Projects
+      </h2>
       <Projects />
     </>
   );

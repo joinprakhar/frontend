@@ -1,11 +1,23 @@
 import React from "react";
 import project from "../assets/project.jpg";
 import "./CSS/projects.css";
+import { ProjectChart } from "./Charts/ProjectChart";
+
 import Carousel from "./Small Components/Coursel";
 import { MiniProject } from "../assets/data";
+import SkillWiseProject from "./Charts/SkillWiseProject";
 const Projects = () => {
   return (
     <>
+      <div className="project-chart">
+        <div className="project-chart-1">
+          <ProjectChart />
+        </div>
+        <div className="project-chart-2">
+          <SkillWiseProject />
+        </div>
+      </div>
+      <h2 className="heading-div">Minor Projects</h2>
       <div className="project-container">
         <Carousel>
           {MiniProject &&
@@ -50,13 +62,13 @@ function MajorProject() {
           maxime! Modi?
         </div>
         <div className="major-project-link">
-          <a href="https://www.google.com" target="_blank">
+          <a href="https://www.google.com">
             <i title="GitHub" class="fa fa-github"></i>
           </a>
-          <a href="">
+          <a href="/">
             <i title="Deployement" class="fa fa-laptop"></i>
           </a>
-          <a href="">
+          <a href="/">
             <i title="Deployement" class="fa fa-external-link-square"></i>
           </a>
         </div>
@@ -77,22 +89,13 @@ function MinorProject() {
         omnis est.
       </p>
       <div className="project-link">
-        <a href="https://www.google.com" target="_blank">
+        <a href="https://www.google.com">
           <i title="GitHub" class="fa fa-github"></i>
         </a>
-        <a href="https://www.google.com" target="_blank">
+        <a href="https://www.google.com">
           <i title="Deployement" class="fa fa-laptop"></i>
         </a>
       </div>
     </div>
   );
-}
-
-{
-  /* <div>
-          {MiniProject &&
-            MiniProject.map((ele) => {
-              return <MajorProject />;
-            })}
-        </div> */
 }

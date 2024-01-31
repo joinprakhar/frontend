@@ -92,3 +92,99 @@
   object-fit: cover;
   border: 1px solid black;
 }
+
+@media (max-width: 768px) {
+  .banner-container div {
+    width: 90%;
+  }
+  .banner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .imageBanner {
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imagediv {
+    width: 50%;
+    height: 200px;
+    margin: 10px;
+    background: #232e34;
+    background: conic-gradient(from 44deg, #828383, #16161c);
+
+    position: relative;
+    border: 1px solid #df9114;
+    box-shadow: 0 0 7px #df9114;
+    border-radius: 300px 120px 70px 210px;
+  }
+
+  .imagediv img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    left: 80px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px, 100px;
+  }
+
+  .social img {
+    width: 34px;
+    height: 34px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  .info-banner {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .info-banner div {
+    text-align: start;
+    margin: 20px 30px;
+  }
+
+  .info-banner > :nth-child(1) {
+    font-size: 1rem;
+    color: aliceblue;
+  }
+
+  .info-banner > :nth-child(2) {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 7px #df9114, 0px 0px 0px #222822, 0 0 1px #465546;
+    color: aliceblue;
+    letter-spacing: 3px;
+  }
+
+  .info-banner > :nth-child(3) {
+    font-size: 1rem;
+    color: aliceblue;
+  }
+}

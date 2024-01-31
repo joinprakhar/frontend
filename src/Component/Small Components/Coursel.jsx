@@ -1,4 +1,4 @@
-import React, { Children, useRef } from "react";
+import React, { useRef } from "react";
 
 const Carousel = ({ children }) => {
   const boxRef = useRef(null);

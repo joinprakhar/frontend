@@ -11,17 +11,101 @@ import docker from "./docker.png";
 import chart from "./chartjs.png";
 
 export const skillpoints = [
-  { name: "Html", image: html, value: "" },
-  { name: "Css", image: css, value: "" },
-  { name: "Javascript", image: js, value: "" },
-  { name: "React", image: react, value: "" },
-  { name: "Node JS", image: node, value: "" },
-  { name: "Express JS", image: express, value: "" },
-  { name: "MongoDB", image: mongodb, value: "" },
-  { name: "MySQL", image: mysql, value: "" },
-  { name: "GIt and GitHub", image: git, value: "" },
-  { name: "Doker", image: docker, value: "" },
-  { name: "Chartjs", image: chart, value: "" },
+  { name: "Html", image: html, value: 7 },
+  { name: "Css", image: css, value: 6 },
+  { name: "Javascript", image: js, value: 8 },
+  { name: "React", image: react, value: 8 },
+  { name: "Node JS", image: node, value: 6 },
+  { name: "Express JS", image: express, value: 7 },
+  { name: "MongoDB", image: mongodb, value: 7 },
+  { name: "MySQL", image: mysql, value: 8 },
+  { name: "GIt and GitHub", image: git, value: 5 },
+  { name: "Doker", image: docker, value: 8 },
+  { name: "Chartjs", image: chart, value: 5 },
 ];
 
-export const MiniProject = [{}, {}, {}, {}, {}, {}, {}];
+export const MiniProject = [
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "React", "Node"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "Git"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "Express"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "MongoDB"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "Linux"],
+  },
+];
+
+export const MajorProject = [
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "React", "Node"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "Git"],
+  },
+  {
+    name: "",
+    desc: "",
+    images: [],
+    git: "",
+    live: "",
+    tech: ["Html", "Css", "js", "Linux"],
+  },
+];

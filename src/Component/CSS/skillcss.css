@@ -1,12 +1,30 @@
+.skillcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .skillpage {
-  width: auto;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   mix-blend-mode: normal;
-  margin: 5px;
+}
+
+.skillchart {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
 }
 
 .ks-container {
@@ -14,7 +32,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5px 15px;
+  padding: 5px 10px;
   margin: 5px 10px;
   background-image: linear-gradient(
     to top,
@@ -32,8 +50,8 @@
   box-shadow: 0 0 5px #df9114;
 }
 .ks-container img {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   object-fit: cover;
   margin: 3px 5px;
 }
@@ -41,4 +59,37 @@
 .ks-container span {
   color: #efecec;
   font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .skillcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skillpage {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    mix-blend-mode: normal;
+  }
+
+  .skillchart {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+  }
 }
