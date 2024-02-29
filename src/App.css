@@ -4,6 +4,11 @@
   box-sizing: border;
 }
 
+body {
+  background: #16161c;
+    background: linear-gradient(from 180deg, #16161c, #505252);
+}
+
 .App {
   background: #16161c;
   background: linear-gradient(from 180deg, #16161c, #505252);
