@@ -11,6 +11,8 @@
 .project-box {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 300px;
   justify-content: space-around;
   align-items: center;
   width: 30%;
