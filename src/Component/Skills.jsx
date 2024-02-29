@@ -4,13 +4,12 @@ import { skillpoints } from "../assets/data.js";
 import BarChart from "./Charts/SkillChart.jsx";
 
 const Skills = () => {
-  console.log(skillpoints);
   return (
     <div className="skillcontainer">
       <div className="skillpage">
         {skillpoints &&
-          skillpoints.map((ele) => {
-            return <KeySkills name={ele?.name} image={ele?.image} />;
+          skillpoints.map((ele, ind) => {
+            return <KeySkills name={ele?.name} image={ele?.image} key={ind} />;
           })}
       </div>
       <div className="skillchart">

@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import project from "../assets/project.jpg";
 import "./CSS/projects.css";
 import { ProjectChart } from "./Charts/ProjectChart";
 
 import Carousel from "./Small Components/Coursel";
-import { MiniProject } from "../assets/data";
+import { MiniProject, MajorProject } from "../assets/data";
 import SkillWiseProject from "./Charts/SkillWiseProject";
 const Projects = () => {
+  console.log(MiniProject);
   return (
     <>
       <div className="project-chart">
@@ -21,8 +22,8 @@ const Projects = () => {
       <div className="project-container">
         <Carousel>
           {MiniProject &&
-            MiniProject.map((ele) => {
-              return <MinorProject />;
+            MiniProject.map((ele, ind) => {
+              return <MinorProject ele={ele} key={ind} />;
             })}
         </Carousel>
       </div>
@@ -36,9 +37,9 @@ const Projects = () => {
           justifyContent: "center",
         }}
       >
-        {MiniProject &&
-          MiniProject.map((ele) => {
-            return <MajorProject />;
+        {MajorProject &&
+          MajorProject.map((ele, ind) => {
+            return <MajorProjects ele={ele} key={ind} />;
           })}
       </div>
     </>
@@ -47,53 +48,57 @@ const Projects = () => {
 
 export default Projects;
 
-function MajorProject() {
+function MajorProjects({ ele }) {
   return (
     <div className="project-box">
       <div className="project-image">
         <img src={project} alt="" />
       </div>
       <div className="project-info">
-        <div>Project Title</div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum
-          qui labore tempore, assumenda voluptate, possimus saepe ducimus a,
-          veniam eligendi ullam molestias quos. Ratione magnam magni unde
-          maxime! Modi?
-        </div>
+        <div>{ele?.name}</div>
+        <div>{ele?.desc}</div>
         <div className="major-project-link">
-          <a href="https://www.google.com">
+          <a href={ele?.git} target="_blank">
             <i title="GitHub" class="fa fa-github"></i>
           </a>
-          <a href="/">
+          <a href={ele?.live} target="_blank">
             <i title="Deployement" class="fa fa-laptop"></i>
           </a>
-          <a href="/">
-            <i title="Deployement" class="fa fa-external-link-square"></i>
-          </a>
+          <i title="Deployement" class="fa fa-external-link-square"></i>
         </div>
       </div>
     </div>
   );
 }
 
-function MinorProject() {
+function MinorProject({ ele }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % ele?.images.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [ele?.images.length]);
+
   return (
     <div className="mini-project-container">
-      <img src={project} alt="" />
-      <span>Project Name Project Name</span>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, fugiat
-        esse voluptate ut Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Neque, fugiat esse voluptate ut harum fugit alias. Atque pariatur
-        omnis est.
-      </p>
+      <img src={ele?.images[currentImageIndex]} alt="" />
+      <span>{ele?.name}</span>
+      <p>{ele?.desc}</p>
       <div className="project-link">
-        <a href="https://www.google.com">
+        <a href={ele?.git} target="_blank">
           <i title="GitHub" class="fa fa-github"></i>
         </a>
-        <a href="https://www.google.com">
-          <i title="Deployement" class="fa fa-laptop"></i>
+        <a href={ele?.live} target="_blank">
+          <i
+            title={ele.live === "Backend" ? "Not-available" : "Deployement"}
+            class="fa fa-laptop"
+            style={{
+              cursor: ele.live === "Backend" ? "not-allowed" : "pointer",
+            }}
+          ></i>
         </a>
       </div>
     </div>

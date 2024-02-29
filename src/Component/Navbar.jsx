@@ -14,7 +14,6 @@ const Navbar = () => {
 
   const handleOutsideClick = () => setIsOpen(false);
 
-  console.log(headerRef);
   useEffect(() => {
     const handleClickOutside = (event) => {
       console.log(

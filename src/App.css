@@ -13,6 +13,10 @@
   position: relative;
   overflow: hidden;
   padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-container {
@@ -21,5 +25,3 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-/* styles.css */
