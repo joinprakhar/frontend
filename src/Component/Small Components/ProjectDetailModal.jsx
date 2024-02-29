@@ -11,12 +11,14 @@ const ProjectDetailModal = ({ data }) => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div className="project-large-heading">
         {data?.name}
-        <a href={data?.git} target="_blank">
-          <i title="GitHub" class="fa fa-github" style={{}}></i>
-        </a>
-        <a href={data?.live} target="_blank">
-          <i title="Deployement" class="fa fa-laptop"></i>
-        </a>
+        <div>
+          <a href={data?.git} target="_blank">
+            <i title="GitHub" class="fa fa-github" style={{}}></i>
+          </a>
+          <a href={data?.live} target="_blank">
+            <i title="Deployement" class="fa fa-laptop"></i>
+          </a>
+        </div>
       </div>
       <div className="project-detail-box">
         <div className="project-detail-image-box">
@@ -48,7 +50,10 @@ const ProjectDetailModal = ({ data }) => {
               return <p>{ele}</p>;
             })}
           </div>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <h3>Tools Used</h3>
+          <div
+            style={{ display: "flex", flexWrap: "wrap", paddingBottom: "10px" }}
+          >
             {tools &&
               tools.map((ele) => {
                 return (
