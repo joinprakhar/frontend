@@ -81,8 +81,6 @@
   }
 
   .project-large-desc {
-    max-height: none;
-    height: max-content;
-    overflow-y: visible;
+    height: 500px;
   }
 }
