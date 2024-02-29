@@ -37,3 +37,18 @@
 .close:hover {
   color: #ff0000;
 }
+
+@media (max-width: 768px) {
+  .modal-overlay {
+  }
+  .modal {
+    height: 100%;
+  }
+  .close {
+    font-size: 40px;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: #ff0000;
+  }
+}

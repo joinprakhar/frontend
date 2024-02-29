@@ -6,6 +6,8 @@ import { ProjectChart } from "./Charts/ProjectChart";
 import Carousel from "./Small Components/Coursel";
 import { MiniProject, MajorProject } from "../assets/data";
 import SkillWiseProject from "./Charts/SkillWiseProject";
+import Modal from "./Small Components/Modal";
+import ProjectDetailModal from "./Small Components/ProjectDetailModal";
 const Projects = () => {
   console.log(MiniProject);
   return (
@@ -20,7 +22,7 @@ const Projects = () => {
       </div>
       <h2 className="heading-div">Minor Projects</h2>
       <div className="project-container">
-        <Carousel>
+        <Carousel arrow={"white"}>
           {MiniProject &&
             MiniProject.map((ele, ind) => {
               return <MinorProject ele={ele} key={ind} />;
@@ -49,25 +51,43 @@ const Projects = () => {
 export default Projects;
 
 function MajorProjects({ ele }) {
+  const [show, setShow] = useState({
+    show: false,
+    data: "",
+  });
   return (
-    <div className="project-box">
-      <div className="project-image">
-        <img src={project} alt="" />
-      </div>
-      <div className="project-info">
-        <div>{ele?.name}</div>
-        <div>{ele?.desc}</div>
-        <div className="major-project-link">
-          <a href={ele?.git} target="_blank">
-            <i title="GitHub" class="fa fa-github"></i>
-          </a>
-          <a href={ele?.live} target="_blank">
-            <i title="Deployement" class="fa fa-laptop"></i>
-          </a>
-          <i title="Deployement" class="fa fa-external-link-square"></i>
+    <>
+      <Modal
+        isOpen={show?.show}
+        onClose={() => setShow((show) => ({ ...show, show: false, data: "" }))}
+      >
+        <ProjectDetailModal data={show.data} />
+      </Modal>
+      <div className="project-box">
+        <div className="project-image">
+          <img src={ele?.image[0]} alt="" />
+        </div>
+        <div className="project-info">
+          <div>{ele?.name}</div>
+          <div>{ele?.desc}</div>
+          <div className="major-project-link">
+            <a href={ele?.git} target="_blank">
+              <i title="GitHub" class="fa fa-github"></i>
+            </a>
+            <a href={ele?.live} target="_blank">
+              <i title="Deployement" class="fa fa-laptop"></i>
+            </a>
+            <i
+              title="Deployement"
+              class="fa fa-external-link-square"
+              onClick={() =>
+                setShow((show) => ({ ...show, show: true, data: ele }))
+              }
+            ></i>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

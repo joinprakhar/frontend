@@ -1,19 +1,20 @@
 .project-detail-box {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 700px;
-  max-height: 400px;
+  align-items: flex-start;
+  max-width: 90vw;
+  max-height: 450px;
 }
 
 .project-detail-image-box {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 40%;
 }
 
 .project-detail-image-box img {
   height: 300px;
+  object-fit: contain;
 }
 
 .project-detail-image-carousel {
@@ -23,10 +24,59 @@
 .project-detail-detail-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 55%;
   height: 432px;
-  margin: 10px;
+  margin: 0 10px;
+  padding: 0px;
+}
+
+.project-large-heading {
+  font-size: 2rem;
+  font-weight: 500;
   padding: 10px;
+}
+
+.project-large-desc {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 0px 0;
+  margin-bottom: 10px;
+}
+
+.project-large-desc p {
+  padding-bottom: 5px;
+}
+
+.project-large-heading i {
+  color: black;
+  margin: 0 10px;
+}
+
+.project-modal-tools {
+  margin: 5px 10px 5px 0px;
+  padding: 2px 5px;
+  background-color: rgb(184, 188, 188);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .project-detail-box {
+    display: block;
+  }
+  .project-detail-image-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project-detail-detail-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .project-large-desc {
+    height: 100%;
+    overflow: auto;
+  }
 }

@@ -45,7 +45,15 @@ export const MiniProject = [
     ],
     git: "https://github.com/joinprakhar/weatherApp",
     live: "https://theweathers.vercel.app/",
-    tech: ["Html", "Css", "JavaScript", "React.Js"],
+    tech: ["Html", "JavaScript", "React.Js", "Css"],
+  },
+  {
+    name: "BlogChef",
+    desc: "BlogChef is a backend application used for creating a blog application with CRUD functionality along with Authentication tool used for building this application is Node.Js, Express.Js, MongoDB, Javascript ",
+    images: [images["blogchef-home.png"], images["blogchef-create.png"]],
+    git: "https://github.com/joinprakhar/blogchef",
+    live: "Backend",
+    tech: ["Express.Js", "MongoDB", "Node.Js"],
   },
   {
     name: "Product Catelog and Comparision",
@@ -67,14 +75,7 @@ export const MiniProject = [
     live: "",
     tech: ["Html", "Css", "JavaScript", "React.Js"],
   },
-  {
-    name: "BlogChef",
-    desc: "BlogChef is a backend application used for creating a blog application with CRUD functionality along with Authentication tool used for building this application is Node.Js, Express.Js, MongoDB, Javascript ",
-    images: [images["blogchef-home.png"], images["blogchef-create.png"]],
-    git: "https://github.com/joinprakhar/blogchef",
-    live: "Backend",
-    tech: ["EJS", "Express.Js", "MongoDB", "Node.Js"],
-  },
+
   {
     name: "Supertune App",
     desc: "This Project is built for sorting list in ascending and descending order and view rating of songs etc. HTML, CSS , Javascript and React is used for building this project",
@@ -89,23 +90,23 @@ export const MiniProject = [
     images: [images["currency converter.png"]],
     git: "https://github.com/joinprakhar/Currency_Converter",
     live: "https://easyconverter.vercel.app/",
-    tech: ["Html", "Css", "JavaScript", "React.Js"],
+    tech: ["Html", "Css", "JavaScript", "MongoDB"],
   },
 ];
 
 export const MajorProject = [
   {
     name: "EasyShop",
-    desc: "The EasyShop e-commerce app is an innovative and feature-rich platform designed to provide users with a convenient and delightful online shopping experience. With the rapid growth of e-commerce in recent years, this app aims to cater to the needs of both businesses and consumers by offering a wide range of products, a user-friendly interface, secure payment options, and efficient order management.",
-    images: [
-      images["theblog-home.png"],
-      images["theblog-blog.png"],
-      images["theblog-create.png"],
-      images["theblog-signin.png"],
-      images["theblog-signup.png"],
+    desc: "The EasyShop e-commerce app is an innovative and feature-rich platform designed to provide users with a convenient and delightful online shopping experience. With the rapid growth of e-commerce in recent years.",
+    image: [
+      images["easyHome.png"],
+      images["easyMyOrder.png"],
+      images["easyOrder.png"],
+      images["easyProduct.png"],
+      images["easyRes.png"],
     ],
     git: "https://github.com/joinprakhar/blog-q",
-    live: "https://thepost.vercel.app/",
+    live: "https://easyshop-acsv.onrender.com/",
     tech: [
       "Html",
       "Css",
@@ -156,9 +157,9 @@ export const MajorProject = [
   {
     name: "The Post",
     desc: "The Post App The Blog Post App is a web application that allows users to create, read, update, and delete blog posts. The app also includes user authentication to ensure that only authorized users can perform CRUD operations. Additionally, the app incorporates a profanity filter to prevent the posting of offensive content.",
-    images: [
-      images["theblog-home.png"],
+    image: [
       images["theblog-blog.png"],
+      images["theblog-home.png"],
       images["theblog-create.png"],
       images["theblog-signin.png"],
       images["theblog-signup.png"],
@@ -205,12 +206,13 @@ export const MajorProject = [
   {
     name: "Blue Minch",
     desc: "Blue Minch is a front-end WebSite built on React have 9 diffrent pages with various in depth details buil in pixel perfect scaling using Figma",
-    images: [images["weatherwatch-mainscreen.png"]],
+    image: [images["bmmain.png"]],
     git: "https://github.com/joinprakhar/blue_minch_project",
     live: "https://blue-minch.vercel.app/",
-    tech: ["Html", "Css", "React", "JavaScript"],
+    tech: ["Html", "Css", "React.Js", "JavaScript"],
     skills: ["Responsive Design", "React-Router-Dom"],
-    largedesc:
+    largedesc: [
       "Blue Minch is a front-end WebSite built on React have 9 diffrent pages with various in depth details buil in pixel perfect scaling using Figma",
+    ],
   },
 ];

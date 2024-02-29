@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-const Carousel = ({ children }) => {
+const Carousel = ({ arrow, children }) => {
   const boxRef = useRef(null);
   const prevScrollLeft = useRef(0);
 
@@ -52,7 +52,7 @@ const Carousel = ({ children }) => {
           color: "white",
         }}
       >
-        <i class="fa fa-toggle-left"></i>
+        <i class="fa fa-toggle-left" style={{ color: arrow }}></i>
       </div>
       <div className="product-container" ref={boxRef}>
         {children}
@@ -66,7 +66,7 @@ const Carousel = ({ children }) => {
           color: "white",
         }}
       >
-        <i class="fa fa-toggle-right"></i>
+        <i class="fa fa-toggle-right" style={{ color: arrow }}></i>
       </div>
       {/* <div style={{ display: "flex", justifyContent: "flex-end" }}>
         <div

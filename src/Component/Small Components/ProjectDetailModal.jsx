@@ -1,63 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/ProjectDetailModal.css";
 import Carousel from "./Coursel";
 
-const ProjectDetailModal = () => {
-  const imgs = [
-    { link: "" },
-    { link: "" },
-    { link: "" },
-    { link: "" },
-    { link: "" },
-    { link: "" },
-  ];
-
-  const url =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtR6A_5G9ik5IY2Vqs-sjkyx32Eo_igLYBDA&usqp=CAU";
+const ProjectDetailModal = ({ data }) => {
+  const [img, setImg] = useState(data?.image[0]);
+  const imgs = data?.image;
+  const tools = [...data?.tech, ...data?.skills];
 
   return (
-    <div className="project-detail-box">
-      <div className="project-detail-image-box">
-        <img src={url} alt="" />
-        <div className="project-detail-image-carousel">
-          <Carousel>
-            {imgs &&
-              imgs.map((ele) => {
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <div className="project-large-heading">
+        {data?.name}
+        <a href={data?.git} target="_blank">
+          <i title="GitHub" class="fa fa-github" style={{}}></i>
+        </a>
+        <a href={data?.live} target="_blank">
+          <i title="Deployement" class="fa fa-laptop"></i>
+        </a>
+      </div>
+      <div className="project-detail-box">
+        <div className="project-detail-image-box">
+          <img src={img} alt="" />
+          <div className="project-detail-image-carousel">
+            <Carousel arrow={"black"}>
+              {imgs &&
+                imgs.map((ele) => {
+                  return (
+                    <img
+                      style={{
+                        width: "70px",
+                        height: "70px",
+                        border: "1px solid black",
+                        marginRight: "10px",
+                      }}
+                      src={ele}
+                      alt={""}
+                      onClick={() => setImg(ele)}
+                    />
+                  );
+                })}
+            </Carousel>
+          </div>
+        </div>
+        <div className="project-detail-detail-box">
+          <div className="project-large-desc">
+            {data?.largedesc.map((ele) => {
+              return <p>{ele}</p>;
+            })}
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            {tools &&
+              tools.map((ele) => {
                 return (
-                  <img
-                    style={{
-                      width: "70px",
-                      height: "70px",
-
-                      marginRight: "10px",
-                    }}
-                    src={url}
-                    alt={""}
-                  />
+                  <div className="project-modal-tools">
+                    <span>{ele}</span>
+                  </div>
                 );
               })}
-          </Carousel>
-        </div>
-      </div>
-      <div className="project-detail-detail-box">
-        <div>Project Name</div>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
-          delectus error quasi, dicta corporis ex alias ea amet, tempora rem
-          labore cum ad mollitia. Repellendus in veniam quasi provident, eum
-          maxime dicta, neque voluptatem nemo maiores impedit aliquid? Ipsa
-          dolor sunt ex eveniet maiores, fuga assumenda neque praesentium
-          distinctio?
-        </div>
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, dolore
-          corporis! Distinctio corporis doloremque dolore a nihil harum beatae
-          laborum! Placeat distinctio voluptatum dolor pariatur praesentium
-          voluptate dolorem similique? Optio.
-        </div>
-        <div>
-          <button>sfweferfe</button>
-          <button>sdfsd</button>
+          </div>
         </div>
       </div>
     </div>
