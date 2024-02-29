@@ -27,7 +27,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 55%;
-  height: 432px;
+  max-height: 432px;
   margin: 0 10px;
   padding: 0px;
 }
@@ -79,6 +79,6 @@
   }
 
   .project-detail-detail-box {
-    height: 600px;
+    max-height: 600px;
   }
 }
