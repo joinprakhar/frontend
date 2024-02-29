@@ -36,6 +36,7 @@ const Projects = () => {
           flexDirection: "row",
           flexWrap: "wrap",
           margin: "10px",
+          width: "100%",
           justifyContent: "center",
         }}
       >
@@ -68,8 +69,12 @@ function MajorProjects({ ele }) {
           <img src={ele?.image[0]} alt="" />
         </div>
         <div className="project-info">
-          <div>{ele?.name}</div>
-          <div>{ele?.desc}</div>
+          <div>
+            <span>{ele?.name}</span>
+            <br />
+            <p>{ele?.desc}</p>
+          </div>
+          <div></div>
           <div className="major-project-link">
             <a href={ele?.git} target="_blank">
               <i title="GitHub" class="fa fa-github"></i>
