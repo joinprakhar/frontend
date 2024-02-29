@@ -64,6 +64,8 @@
 @media (max-width: 768px) {
   .project-detail-box {
     display: block;
+    max-height: 90vh;
+    overflow: scroll;
   }
   .project-detail-image-box {
     width: 90%;
@@ -75,8 +77,8 @@
     margin: 0 auto;
     margin-top: 20px;
   }
-  .project-large-desc {
-    height: 100%;
-    overflow: auto;
+
+  .project-detail-detail-box {
+    height: 600px;
   }
 }
