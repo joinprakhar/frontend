@@ -41,9 +41,10 @@
 @media (max-width: 768px) {
   .modal {
     height: 100vh;
+    overflow-y: scroll;
   }
   .close {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     top: 2px;
     right: 10px;

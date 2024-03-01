@@ -35,8 +35,9 @@ const Projects = () => {
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
-          margin: "10px",
-          width: "100%",
+          margin: "10px auto",
+          width: "95%",
+          height: "100%",
           justifyContent: "center",
         }}
       >

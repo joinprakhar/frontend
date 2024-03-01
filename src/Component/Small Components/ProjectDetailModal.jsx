@@ -52,7 +52,7 @@ const ProjectDetailModal = ({ data }) => {
           </div>
           <h3>Tools Used</h3>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingBottom: "10px" }}
+            style={{ display: "flex", flexWrap: "wrap", paddingBottom: "20px" }}
           >
             {tools &&
               tools.map((ele) => {
