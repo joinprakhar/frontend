@@ -216,3 +216,24 @@ export const MajorProject = [
     ],
   },
 ];
+
+export const itdose = [
+  {
+    name: "ComplianceKare",
+    desc: "Weather App is a React-based application of weather for real-time updates of any location. It utilizes Lodash and RESTful APIs for data management and fetches weather data using geolocation.",
+    images: [images["compliancecare.png"]],
+    live: "https://compliancekare.com/",
+  },
+  {
+    name: "Talent Destination",
+    desc: "Weather App is a React-based application of weather for real-time updates of any location. It utilizes Lodash and RESTful APIs for data management and fetches weather data using geolocation.",
+    images: [images[""]],
+    live: "https://talent-destination.com/",
+  },
+  {
+    name: "Astrolense",
+    desc: "Weather App is a React-based application of weather for real-time updates of any location. It utilizes Lodash and RESTful APIs for data management and fetches weather data using geolocation.",
+    images: [images["astroHome.png"]],
+    live: "https://www.astrolense.com/",
+  },
+];

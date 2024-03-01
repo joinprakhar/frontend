@@ -3,6 +3,7 @@ import "./CSS/Navbar.css";
 import Banner from "./Banner";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -81,8 +82,12 @@ const Navbar = () => {
         <h2 className="heading-div">Skills</h2>
         <Skills />
       </div>
+      <h2 id="experience" className="heading-div">
+        Experience
+      </h2>
+      <Experience />
       <h2 id="project" className="heading-div">
-        Projects
+        Projects Stats
       </h2>
       <Projects />
     </>
