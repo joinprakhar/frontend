@@ -212,7 +212,16 @@
   height: 250px;
 }
 
+@media (max-width: 960px) {
+  .project-box {
+    width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
+  .project-box {
+    width: 95%;
+  }
   .project-chart {
     display: flex;
     flex-direction: column;

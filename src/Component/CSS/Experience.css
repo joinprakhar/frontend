@@ -23,13 +23,12 @@
 
 .comp-name {
   font-size: 1.5rem;
+  text-align: left;
 }
 
 .comp-post {
   font-size: 1.3rem;
-}
-
-.company-details:nth-child(1) {
+  text-align: right;
 }
 
 .company-details,
@@ -118,5 +117,19 @@
     margin: 0 auto;
     object-fit: contain;
     border-radius: 0.5rem;
+  }
+  .comp-name {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .comp-post {
+    font-size: 1.1rem;
+    text-align: right;
+  }
+
+  .company-responce-role {
+    width: 90%;
+    text-align: justify;
   }
 }

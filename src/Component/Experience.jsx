@@ -123,27 +123,25 @@ const Experience = () => {
           <span>Key Roles and Responsibility</span>
           <ul className="company-responce-role">
             <li>
-              Developed Elabpro application form scratch, a software tailored
-              for hospital labs, facilitating sample management, patient report
-              generation, sample collection, dispatch reporting, and machine
-              data retrieval.
+              Implemented and maintained front-end web applications, resulting
+              in a 20% reduction in page load speeds and conversion rates by
+              utilizing modern web technologies such as React.js and best
+              practices for user experience and accessibility.
             </li>
             <li>
-              Utilized ReactJS, and JavaScript, and integrated REST APIs with
-              Axios for seamless data communication.
+              Worked with cross-functional teams to develop and execute on-time
+              and on-budget projects and initiatives by effectively
+              communicating project timelines, progress, and objectives{" "}
             </li>
             <li>
-              Constructed a scalable component library, incorporating API
-              integration, form handling with Formik and Yup, routing, Redux
-              Thunk, React PDF, and React Hooks.
+              Granted additional code review permissions after demonstrating
+              strong attention to detail which led to a 25% decrease in code
+              errors.
             </li>
             <li>
-              Tools used include ReactJS, Bootstrap, HTML/CSS, JavaScript, and
-              Redux for state management.
-            </li>
-            <li>
-              Gain 20+ clients in first month of product deployment and 95%
-              satisfaction rate from them
+              Implemented and maintained front-end web applications, resulting
+              in a 10% increase in website traffic and conversion rates. Major
+              projects (Details on Second Page)
             </li>
           </ul>
         </div>

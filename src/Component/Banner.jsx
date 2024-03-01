@@ -34,10 +34,14 @@ const Banner = () => {
       <div className="info-banner">
         <div className="banner-intro">Hi, I am</div>
         <div className="banner-name">{name}&nbsp;</div>
-        <div>
-          Enthusiastic and motivated <strong>Full Stack Developer</strong>,
-          focused on building dynamic and interactive web applications with the
-          latest technologies and best coding practices.
+        <div style={{ textAlign: "justify" }}>
+          Skilled front-end developer with over two years of expertise,
+          proficient in HTML, CSS, and JavaScript, and extensive MERN stack
+          experience. Achieved measurable success in increasing page load speeds
+          by 25%. Led the implementation of a development system which resulted
+          in a 15% reduction in development time and a 20% increase in website
+          performance. Adept in collaborating with cross-functional teams and
+          delivering projects on time
         </div>
       </div>
       <div className="imageBanner">
