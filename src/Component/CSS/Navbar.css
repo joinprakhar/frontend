@@ -10,6 +10,9 @@ a {
 }
 
 .navbar {
+  /* position: sticky;
+  top: 0;
+  z-index: 2; */
   background-color: transparent;
   color: #000000;
   padding: 10px 0;

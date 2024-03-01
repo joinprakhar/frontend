@@ -58,13 +58,18 @@ const Navbar = () => {
                 scrollToProjects={scrollToProjects}
               />
               <NavItem
-                title="About"
-                link="about"
+                title="Skills"
+                link="skill"
                 scrollToProjects={scrollToProjects}
               />
               <NavItem
                 title="Project"
                 link="project"
+                scrollToProjects={scrollToProjects}
+              />
+              <NavItem
+                title="Experience"
+                link="experience"
                 scrollToProjects={scrollToProjects}
               />
 
@@ -73,15 +78,16 @@ const Navbar = () => {
               <DropdownItem title="Service 2" link="/service2" />
               <DropdownItem title="Service 3" link="/service3" />
             </NavItem> */}
-              <NavItem title="Contact" link="/contact" />
+              {/* <NavItem title="Contact" link="contact" /> */}
             </ul>
           </div>
         </nav>
         <Banner />
-
-        <h2 className="heading-div">Skills</h2>
-        <Skills />
       </div>
+      <h2 className="heading-div" id="skill">
+        Skills
+      </h2>
+      <Skills />
       <h2 id="experience" className="heading-div">
         Experience
       </h2>

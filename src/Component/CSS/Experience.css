@@ -9,16 +9,27 @@
   /* width: 100%; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2%;
 }
 
 .company-details,
-.company-profile,
-.company-responce {
+.company-profile {
   display: flex;
   justify-content: space-between;
   margin: 2px 5px;
   /* width: 90vw; */
+}
+
+.company-responce {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+  border-radius: 0.5rem;
 }
 
 .comp-name {
@@ -40,6 +51,7 @@
 .company-responce-role {
   width: 70%;
   text-align: justify;
+  background-color: white;
 }
 .company-responce span {
   text-decoration: underline;
