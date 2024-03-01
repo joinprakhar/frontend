@@ -59,8 +59,9 @@ const Experience = () => {
             margin: "5px 8px",
             textAlign: "center",
             cursor: "pointer",
-            // textDecoration: "underline",
-            // backgroundColor: "dark grey",
+            backgroundColor: "white",
+            borderRadius: "0.5rem",
+            color: "black",
           }}
           onClick={() => showAcc("itdose")}
         >
@@ -97,7 +98,7 @@ const Experience = () => {
                 </li>
               </ul>
 
-              <a href="https://uat.elabpro.in">
+              <a href="https://uat.elabpro.in" target="_blank">
                 <button>
                   Deployed Link
                   <i class="fa fa-laptop" style={{ margin: "2px" }}></i>
@@ -150,8 +151,9 @@ const Experience = () => {
             margin: "5px 8px",
             textAlign: "center",
             cursor: "pointer",
-            // textDecoration: "underline",
-            // backgroundColor: "dark grey",
+            backgroundColor: "white",
+            borderRadius: "0.5rem",
+            color: "black",
           }}
           onClick={() => showAcc("comp1")}
         >
@@ -181,7 +183,7 @@ const Experience = () => {
                   </li>
                 </ul>
 
-                <a href="https://compliancekare.com/">
+                <a href="https://compliancekare.com/" target="_blank">
                   <button>
                     Deployed Link
                     <i class="fa fa-laptop" style={{ margin: "2px" }}></i>
@@ -220,7 +222,7 @@ const Experience = () => {
                   </li>
                 </ul>
 
-                <a href="https://talent-destination.com/">
+                <a href="https://talent-destination.com/" target="_blank">
                   <button>
                     Deployed Link
                     <i class="fa fa-laptop" style={{ margin: "2px" }}></i>
@@ -253,7 +255,7 @@ const Experience = () => {
                   </li>
                 </ul>
 
-                <a href="https://www.astrolense.com/">
+                <a href="https://www.astrolense.com/" target="_blank">
                   <button>
                     Deployed Link
                     <i class="fa fa-laptop" style={{ margin: "2px" }}></i>
