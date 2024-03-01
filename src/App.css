@@ -6,7 +6,7 @@
 
 body {
   background: #16161c;
-    background: linear-gradient(from 180deg, #16161c, #505252);
+  background: linear-gradient(from 180deg, #16161c, #505252);
 }
 
 .App {
@@ -29,4 +29,20 @@ body {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.arrow-cont {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .arrow-cont {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .caro-arrow {
+    display: none;
+  }
 }
