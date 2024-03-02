@@ -20,7 +20,9 @@ const Projects = () => {
           <SkillWiseProject />
         </div>
       </div>
-      <h2 className="heading-div">Minor Projects</h2>
+      <h3 className="" style={{ textAlign: "center" }}>
+        Minor Projects
+      </h3>
       <div className="project-container">
         <Carousel arrow={"white"}>
           {MiniProject &&
@@ -29,7 +31,9 @@ const Projects = () => {
             })}
         </Carousel>
       </div>
-      <h2 className="heading-div">Major Projects</h2>
+      <h3 className="" style={{ textAlign: "center" }}>
+        Major Projects
+      </h3>
       <div
         style={{
           display: "flex",

@@ -95,16 +95,6 @@ a {
   margin: 5px 0;
 }
 
-.heading-div {
-  width: 100%;
-  overflow: hidden;
-  margin: 10px auto;
-  color: black;
-  text-align: center;
-  letter-spacing: 3px;
-  margin-top: 20px;
-}
-
 @media (max-width: 768px) {
   .navbar-menu {
     flex-direction: column;

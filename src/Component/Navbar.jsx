@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import WhatIDo from "./WhatIDo";
+import Education from "./Education";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -54,7 +55,7 @@ const Navbar = () => {
           <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
             <NavItem
               title="Home"
-              link="/"
+              link="home"
               scrollToProjects={scrollToProjects}
             />
             <NavItem
@@ -82,22 +83,60 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <div className="pageBanner">
+      <div className="pageBanner" id="home">
         <Banner />
       </div>
+      <div className="heading-cont-key">
+        <h2 id="experience" className="heading-div">
+          What I Do?
+        </h2>
+      </div>
       <WhatIDo />
-      <h2 className="heading-div" id="skill">
-        Skills
-      </h2>
+      <div className="heading-cont-key">
+        <h2 className="heading-div" id="skill">
+          Skills
+        </h2>
+        <p className="heading-cont-div">
+          I believe that technology is advancing rapidly and is regularly
+          updated. Therefore, I like to immerse myself in the latest tools and
+          technologies to stay ahead of the curve and enhance my capabilities.
+        </p>
+      </div>
+
       <Skills />
-      <h2 id="experience" className="heading-div">
-        Experience
-      </h2>
+      <div className="heading-cont-key">
+        <h2 id="experience" className="heading-div">
+          Experience
+        </h2>
+        <p className="heading-cont-div">
+          I began my journey with a well-established company where I worked as a
+          frontend developer. During this time, I gained experience working with
+          agile methodologies. Additionally, I have contributed to small
+          startups in internship roles.
+        </p>
+      </div>
       <Experience />
-      <h2 id="project" className="heading-div">
+      <div className="heading-cont-key">
+        <h2 id="project" className="heading-div">
+          Projects
+        </h2>
+        <p className="heading-cont-div">
+          In my free time, I enhance my skills by creating new projects. My
+          belief lies in learning new tools and technologies through
+          project-based learning. I regularly develop projects and integrate new
+          learnings into my personal repertoire.
+        </p>
+      </div>
+      <h3 className="" style={{ textAlign: "center" }}>
         Projects Stats
-      </h2>
+      </h3>
       <Projects />
+      <div className="heading-cont-key">
+        <h2 id="experience" className="heading-div">
+          Education, Certification and Awards
+        </h2>
+      </div>
+      <Education />
     </>
   );
 };

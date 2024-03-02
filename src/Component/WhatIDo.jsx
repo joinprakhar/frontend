@@ -27,7 +27,7 @@ const WhatIDo = () => {
         <EndWise />
       </div>
       <div className="wid-back">
-        <h3 className="wid-title">Back-End Development</h3>
+        <h3 className="wid-title">Backend & Version Control</h3>
         <ul class="custom-list">
           <li>Experience working on multiple backend technologies</li>
           <li>

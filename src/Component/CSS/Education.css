@@ -1,0 +1,34 @@
+.edu-main-cont {
+  display: flex;
+}
+/* .edu-main-cont :hover {
+  border: 1px solid black;
+} */
+
+.edu-send-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32%;
+  margin: 10px auto;
+  background-color: #cee7ee;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+
+.edu-send-cont h3 {
+  text-align: center;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .edu-main-cont {
+    flex-direction: column;
+  }
+
+  .edu-send-cont {
+    width: 98%;
+  }
+}
