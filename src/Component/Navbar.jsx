@@ -6,6 +6,10 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import WhatIDo from "./WhatIDo";
 import Education from "./Education";
+import email from "../assets/email.png";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import resume from "../assets/resume.png";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -73,6 +77,16 @@ const Navbar = () => {
               link="experience"
               scrollToProjects={scrollToProjects}
             />
+            <NavItem
+              title="Education"
+              link="education"
+              scrollToProjects={scrollToProjects}
+            />
+            <NavItem
+              title="Contact"
+              link="contact"
+              scrollToProjects={scrollToProjects}
+            />
 
             {/* <NavItem title="Services">
               <DropdownItem title="Service 1" link="/service1" />
@@ -87,9 +101,7 @@ const Navbar = () => {
         <Banner />
       </div>
       <div className="heading-cont-key">
-        <h2 id="experience" className="heading-div">
-          What I Do?
-        </h2>
+        <h2 className="heading-div">What I Do?</h2>
       </div>
       <WhatIDo />
       <div className="heading-cont-key">
@@ -132,11 +144,45 @@ const Navbar = () => {
       </h3>
       <Projects />
       <div className="heading-cont-key">
-        <h2 id="experience" className="heading-div">
+        <h2 id="education" className="heading-div">
           Education, Certification and Awards
         </h2>
       </div>
       <Education />
+      <div className="heading-cont-key">
+        <h2 id="contact" className="heading-div">
+          Contact
+        </h2>
+        <p className="heading-cont-div">
+          I am available on almost every social media. You can message me, I
+          will reply within 24 hours. I can work upon Front-end , Back-end or
+          Full-Stack Development
+        </p>
+      </div>
+      <div className="contact">
+        {/* <div className="contact-img">
+          <img src="" alt="" />
+        </div> */}
+        <div className="contact-social">
+          <div className="social">
+            <a href="">
+              <img src={github} alt="img" className="icons" />
+            </a>
+            <a href="">
+              <img src={email} alt="img" className="icons" />
+            </a>
+            <a href="">
+              <img src={linkedin} alt="img" className="icons" />
+            </a>
+            <a href="">
+              <img src={resume} alt="img" className="icons" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3 style={{ textAlign: "center", backgroundColor: " #b5dbe6" }}>
+        Made with ❤️ by Prakhar Pandey
+      </h3>
     </>
   );
 };

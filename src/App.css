@@ -64,6 +64,21 @@ body {
   margin-top: 10px;
   padding: 20px;
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.contact-social,
+.contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
 
 @media (max-width: 768px) {
   .heading-cont-key {

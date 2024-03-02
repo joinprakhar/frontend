@@ -1,5 +1,6 @@
 .edu-main-cont {
   display: flex;
+  /* min-height: 70vh; */
 }
 /* .edu-main-cont :hover {
   border: 1px solid black;
