@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import WhatIDo from "./WhatIDo";
 
 const Navbar = () => {
   const headerRef = useRef(null);
@@ -42,48 +43,49 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="pageBanner">
-        <nav className="navbar">
-          <div className="navbar-container" ref={headerRef}>
-            <h1 className="logo">&nbsp;</h1>
-            <button className="navbar-toggle" onClick={toggleNavbar}>
-              <span className="navbar-icon"></span>
-              <span className="navbar-icon"></span>
-              <span className="navbar-icon"></span>
-            </button>
-            <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
-              <NavItem
-                title="Home"
-                link="/"
-                scrollToProjects={scrollToProjects}
-              />
-              <NavItem
-                title="Skills"
-                link="skill"
-                scrollToProjects={scrollToProjects}
-              />
-              <NavItem
-                title="Project"
-                link="project"
-                scrollToProjects={scrollToProjects}
-              />
-              <NavItem
-                title="Experience"
-                link="experience"
-                scrollToProjects={scrollToProjects}
-              />
+      <nav className="navbar">
+        <div className="navbar-container" ref={headerRef}>
+          <h1 className="logo">Prakhar Pandey</h1>
+          <button className="navbar-toggle" onClick={toggleNavbar}>
+            <span className="navbar-icon"></span>
+            <span className="navbar-icon"></span>
+            <span className="navbar-icon"></span>
+          </button>
+          <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
+            <NavItem
+              title="Home"
+              link="/"
+              scrollToProjects={scrollToProjects}
+            />
+            <NavItem
+              title="Skills"
+              link="skill"
+              scrollToProjects={scrollToProjects}
+            />
+            <NavItem
+              title="Project"
+              link="project"
+              scrollToProjects={scrollToProjects}
+            />
+            <NavItem
+              title="Experience"
+              link="experience"
+              scrollToProjects={scrollToProjects}
+            />
 
-              {/* <NavItem title="Services">
+            {/* <NavItem title="Services">
               <DropdownItem title="Service 1" link="/service1" />
               <DropdownItem title="Service 2" link="/service2" />
               <DropdownItem title="Service 3" link="/service3" />
             </NavItem> */}
-              {/* <NavItem title="Contact" link="contact" /> */}
-            </ul>
-          </div>
-        </nav>
+            {/* <NavItem title="Contact" link="contact" /> */}
+          </ul>
+        </div>
+      </nav>
+      <div className="pageBanner">
         <Banner />
       </div>
+      <WhatIDo />
       <h2 className="heading-div" id="skill">
         Skills
       </h2>

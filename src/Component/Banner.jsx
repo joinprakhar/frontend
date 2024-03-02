@@ -8,7 +8,7 @@ import developer from "../assets/developer.png";
 
 const Banner = () => {
   const [name, setName] = useState("");
-  const text = "Prakhar Pandey";
+  const text = "Front-End Developer";
 
   useEffect(() => {
     let currentIndex = 0;
@@ -18,10 +18,12 @@ const Banner = () => {
           setName(text.slice(0, currentIndex));
 
           currentIndex++;
+          return () => clearInterval(interval);
         } else {
           clearInterval(interval);
           setName("");
           currentIndex = 0;
+          return () => clearInterval(interval);
         }
       }, 300);
 
@@ -35,13 +37,13 @@ const Banner = () => {
         <div className="banner-intro">Hi, I am</div>
         <div className="banner-name">{name}&nbsp;</div>
         <div style={{ textAlign: "justify" }}>
-          Skilled front-end developer with over two years of expertise,
-          proficient in HTML, CSS, and JavaScript, and extensive MERN stack
-          experience. Achieved measurable success in increasing page load speeds
-          by 25%. Led the implementation of a development system which resulted
-          in a 15% reduction in development time and a 20% increase in website
-          performance. Adept in collaborating with cross-functional teams and
-          delivering projects on time
+          Having two years of expertise and proficient in HTML, CSS, and
+          JavaScript, and extensive MERN stack experience. Achieved measurable
+          success in increasing page load speeds by 25%. Led the implementation
+          of a development system which resulted in a 15% reduction in
+          development time and a 20% increase in website performance. Adept in
+          collaborating with cross-functional teams and delivering projects on
+          time
         </div>
       </div>
       <div className="imageBanner">

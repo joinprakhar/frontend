@@ -5,13 +5,13 @@
 }
 
 body {
-  background: #16161c;
-  background: linear-gradient(from 180deg, #16161c, #505252);
+  background: #d8e5e9;
+  background: linear-gradient(from 180deg, #97def3, #ffffff);
 }
 
 .App {
-  background: #16161c;
-  background: linear-gradient(from 180deg, #16161c, #505252);
+  background: #d8e5e9;
+  background: linear-gradient(from 180deg, #cee7ee, #505252);
 }
 
 .product-carousel {

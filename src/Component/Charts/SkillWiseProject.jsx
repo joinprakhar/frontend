@@ -22,8 +22,8 @@ const SkillWiseProject = () => {
     Tooltip,
     Legend
   );
-  const getResult = (Arr1, Arr2) => {
-    let combinedArr = Arr1.concat(Arr2);
+  const getResult = (Arr0, Arr1, Arr2) => {
+    let combinedArr = Arr0.concat(Arr1, Arr2);
     let result = {};
     combinedArr.forEach((item) => {
       let uniqueLetters = [...new Set(item.tech)]; // Extract unique letters from each key
@@ -37,7 +37,7 @@ const SkillWiseProject = () => {
     return resultArray;
   };
 
-  const dataChart = getResult(MiniProject, MajorProject);
+  const dataChart = getResult([{ tech: [""] }], MiniProject, MajorProject);
   const labels = [];
   const dataValue = [];
   dataChart.forEach((ele) => {
@@ -78,6 +78,11 @@ const SkillWiseProject = () => {
         options={{
           maintainAspectRatio: false,
           responsive: true,
+          plugins: {
+            legend: {
+              // display: false,
+            },
+          },
         }}
       />
     </div>

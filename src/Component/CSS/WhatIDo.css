@@ -1,0 +1,86 @@
+.whatido-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.wid-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.whatido-cont {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.wid-front,
+.wid-back {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.wid-title {
+  text-align: center;
+}
+
+.wid-front,
+.wid-back li {
+  text-align: justify;
+}
+.wid-front {
+  width: 30%;
+}
+
+.wid-front-img {
+  width: 100%;
+}
+.wid-front-img img {
+  width: 100%;
+}
+
+.wid-chart {
+  width: 30%;
+}
+
+.wid-back {
+  width: 30%;
+}
+
+.custom-list {
+  list-style: none; /* Remove default list style */
+}
+
+.custom-list li {
+  margin: 10px 0;
+  display: flex; /* Use flexbox to align content */
+  align-items: flex-start; /* Align items vertically */
+}
+
+.custom-list li::before {
+  padding-top: 5px;
+  content: "⚡"; /* Use lightning bolt symbol as content */
+  margin-right: 0.5em; /* Add space between the symbol and the text */
+}
+
+@media (max-width: 768px) {
+  .whatido-cont {
+    flex-direction: column;
+  }
+  .wid-front {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wid-chart {
+    width: 90%;
+  }
+
+  .wid-back {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

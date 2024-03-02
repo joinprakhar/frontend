@@ -29,10 +29,10 @@ const Carousel = ({ arrow, children }) => {
             padding: "0",
             margin: "0 10px",
             fontSize: "20px",
-            color: "white",
+            color: "black",
           }}
         >
-          <i class="fa fa-toggle-left" style={{ color: arrow }}></i>
+          <i class="fa fa-toggle-left" style={{ color: "black" }}></i>
         </div>
         <div className="product-container" ref={boxRef}>
           {children}
@@ -44,10 +44,10 @@ const Carousel = ({ arrow, children }) => {
             padding: "0",
             margin: "0 10px",
             fontSize: "20px",
-            color: "white",
+            color: "black",
           }}
         >
-          <i class="fa fa-toggle-right" style={{ color: arrow }}></i>
+          <i class="fa fa-toggle-right" style={{ color: "black" }}></i>
         </div>
       </div>
       <div className="arrow-cont">
@@ -57,10 +57,10 @@ const Carousel = ({ arrow, children }) => {
             padding: "0",
             margin: "0 10px",
             fontSize: "20px",
-            color: "white",
+            color: "black",
           }}
         >
-          <i class="fa fa-toggle-left"></i>
+          <i class="fa fa-toggle-left" style={{ color: "black" }}></i>
         </div>
         <div
           onClick={btnPressNext}
@@ -68,10 +68,10 @@ const Carousel = ({ arrow, children }) => {
             padding: "0",
             margin: "0 10px",
             fontSize: "20px",
-            color: "white",
+            color: "black",
           }}
         >
-          <i class="fa fa-toggle-right"></i>
+          <i class="fa fa-toggle-right" style={{ color: "black" }}></i>
         </div>
       </div>
     </>

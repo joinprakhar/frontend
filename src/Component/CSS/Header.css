@@ -26,21 +26,21 @@
 }
 
 .info-banner > :nth-child(1) {
-  font-size: 1.5rem;
-  color: aliceblue;
+  font-size: 1.2rem;
+  color: rgb(1, 26, 48);
 }
 
 .info-banner > :nth-child(2) {
   font-weight: bold;
   font-size: 2.5rem;
-  text-shadow: 0 0 7px #df9114, 0px 0px 0px #222822, 0 0 1px #465546;
-  color: aliceblue;
+  text-shadow: 0 0 7px #ffffff, 0px 0px 0px #ffffff, 0 0 1px #fafaf4;
+  color: rgb(1, 26, 48);
   letter-spacing: 3px;
 }
 
 .info-banner > :nth-child(3) {
-  font-size: 1.3rem;
-  color: aliceblue;
+  font-size: 1.1rem;
+  color: rgb(1, 26, 48);
 }
 
 .imageBanner {
@@ -55,8 +55,8 @@
   width: 200px;
   height: 350px;
 
-  background: #232e34;
-  background: conic-gradient(from 44deg, #828383, #16161c);
+  background: #cee7ee;
+  background: conic-gradient(from 44deg, #cee7ee, #fcfcfc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +113,7 @@
   .imagediv {
     height: 200px;
     margin: 10px auto;
-    background: #232e34;
+    background: #cee7ee;
     position: none;
     background: conic-gradient(from 44deg, #828383, #16161c);
     display: flex;
@@ -168,19 +168,15 @@
 
   .info-banner > :nth-child(1) {
     font-size: 1rem;
-    color: aliceblue;
   }
 
   .info-banner > :nth-child(2) {
     font-weight: bold;
     font-size: 1.5rem;
-    text-shadow: 0 0 7px #df9114, 0px 0px 0px #222822, 0 0 1px #465546;
-    color: aliceblue;
     letter-spacing: 3px;
   }
 
   .info-banner > :nth-child(3) {
     font-size: 1rem;
-    color: aliceblue;
   }
 }

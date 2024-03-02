@@ -34,15 +34,8 @@
   align-items: center;
   padding: 5px 10px;
   margin: 5px 10px;
-  background-image: linear-gradient(
-    to top,
-    #000000,
-    #161316,
-    #232026,
-    #2d2e37,
-    #333e49,
-    #39505e
-  );
+  background: #2a6481;
+  background: conic-gradient(from 60deg, #024d62, #505252);
   border-radius: 10px;
 }
 
