@@ -3,6 +3,7 @@
   flex-direction: column;
   background: #cee7ee;
   background: conic-gradient(from 45deg, #fcfcfc, #cee7ee);
+  padding-top: 15px;
 }
 
 a {
@@ -13,7 +14,6 @@ a {
   position: sticky;
   top: 0;
   background: #cee7ee;
-  /* background: conic-gradient(from 97.5deg, #cee7ee, #fcfcfc); */
   color: #000000;
   padding: 10px 0;
   z-index: 2;

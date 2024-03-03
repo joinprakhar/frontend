@@ -41,6 +41,8 @@ body {
   align-items: center;
   width: 100%;
   border-top: 10px solid #b5dbe6;
+  padding-top: 25px;
+  /* margin-top: 100px; */
 }
 
 .heading-div {

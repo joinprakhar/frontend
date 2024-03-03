@@ -8,7 +8,7 @@ import developer from "../assets/developer.png";
 
 const Banner = () => {
   const [name, setName] = useState("");
-  const text = "Front-End Developer";
+  const text = "Prakhar Pandey";
 
   useEffect(() => {
     let currentIndex = 0;
@@ -39,7 +39,7 @@ const Banner = () => {
         <div style={{ textAlign: "justify", fontWeight: "700" }}>
           A passionate individual who always thrives to work on end to end
           products which develop sustainable and scalable social and technical
-          systems to create impact. time
+          systems to create impact.
         </div>
       </div>
       <div className="imageBanner">

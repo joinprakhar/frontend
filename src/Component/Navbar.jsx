@@ -104,10 +104,8 @@ const Navbar = () => {
         <h2 className="heading-div">What I Do?</h2>
       </div>
       <WhatIDo />
-      <div className="heading-cont-key">
-        <h2 className="heading-div" id="skill">
-          Skills
-        </h2>
+      <div className="heading-cont-key" id="skill">
+        <h2 className="heading-div">Skills</h2>
         <p className="heading-cont-div">
           I believe that technology is advancing rapidly and is regularly
           updated. Therefore, I like to immerse myself in the latest tools and
@@ -116,10 +114,8 @@ const Navbar = () => {
       </div>
 
       <Skills />
-      <div className="heading-cont-key">
-        <h2 id="experience" className="heading-div">
-          Experience
-        </h2>
+      <div className="heading-cont-key" id="experience">
+        <h2 className="heading-div">Experience</h2>
         <p className="heading-cont-div">
           I began my journey with a well-established company where I worked as a
           frontend developer. During this time, I gained experience working with
@@ -128,10 +124,8 @@ const Navbar = () => {
         </p>
       </div>
       <Experience />
-      <div className="heading-cont-key">
-        <h2 id="project" className="heading-div">
-          Projects
-        </h2>
+      <div className="heading-cont-key" id="project">
+        <h2 className="heading-div">Projects</h2>
         <p className="heading-cont-div">
           In my free time, I enhance my skills by creating new projects. My
           belief lies in learning new tools and technologies through
@@ -143,21 +137,12 @@ const Navbar = () => {
         Projects Stats
       </h3>
       <Projects />
-      <div className="heading-cont-key">
-        <h2 id="education" className="heading-div">
-          Education, Certification and Awards
-        </h2>
+      <div className="heading-cont-key" id="education">
+        <h2 className="heading-div">Education, Certification and Awards</h2>
       </div>
       <Education />
-      <div className="heading-cont-key">
-        <h2 id="contact" className="heading-div">
-          Contact
-        </h2>
-        <p className="heading-cont-div">
-          I am available on almost every social media. You can message me, I
-          will reply within 24 hours. I can work upon Front-end , Back-end or
-          Full-Stack Development
-        </p>
+      <div className="heading-cont-key" id="contact">
+        <h2 className="heading-div">Contact</h2>
       </div>
       <div className="contact">
         {/* <div className="contact-img">

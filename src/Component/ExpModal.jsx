@@ -16,7 +16,7 @@ export const Comp1 = () => {
       </div>
       <div className="company-profile" style={{ color: "black" }}>
         <span>Noida, Uttar Pradesh</span>
-        <span>2023 - Present</span>
+        <span>August 2023 - Present</span>
       </div>
       <>
         <div className="company-responce">
@@ -92,12 +92,12 @@ export const Comp2 = () => {
   return (
     <div className="company-cont-modal">
       <div className="company-details" style={{ color: "black" }}>
-        <span className="comp-name">ItDose Infosystem</span>
-        <span className="comp-post">Software Developer</span>
+        <span className="comp-name">Infosyselite Technologies</span>
+        <span className="comp-post">Front-End Developer</span>
       </div>
       <div className="company-profile" style={{ color: "black" }}>
-        <span>Noida, Uttar Pradesh </span>
-        <span>2023 - Present</span>
+        <span>Okhla, New Delhi </span>
+        <span>Jan 2022 - July 2023</span>
       </div>
       <>
         <div className="company-responce">

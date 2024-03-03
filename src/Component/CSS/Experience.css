@@ -59,13 +59,14 @@
 }
 
 .company-responce {
+  border-top: 2px solid black;
   display: flex;
   justify-content: space-between;
   background-color: white;
   color: black;
   margin: 5px 0px 5px 0px;
   padding: 5px;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .comp-name {
@@ -110,6 +111,10 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
+}
+
+.company-Projects-S-cont button {
+  cursor: pointer;
 }
 
 .company-Projects-S-cont span {
