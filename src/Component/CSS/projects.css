@@ -10,19 +10,18 @@
 
 .project-box {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 290px;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 25%;
+  height: 410px;
+  justify-content: flex-start;
   align-items: center;
-  width: 46%;
-  height: 210px;
   border-radius: 10px;
   background: #2a6481;
-  background: conic-gradient(from 60deg, #024d62, #505252);
+  background: conic-gradient(from 0deg, rgb(244, 207, 207), #f1ca9c);
   transition: background-color 0.3s ease;
-  padding: 5px;
+  /* padding: 5px; */
   margin: 10px auto;
+  cursor: pointer;
 }
 
 .project-box div {
@@ -30,23 +29,25 @@
 }
 
 .project-box:hover {
-  box-shadow: 0 0 10px #df9114;
+  box-shadow: 0 0 1px #000000;
+  border-bottom: 3px solid blue;
 }
 
 .project-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 40%;
-  margin-bottom: 5px;
+  height: 50%;
+  width: 100%;
+  margin: 0;
   padding: 0;
 }
 
 .project-image img {
-  height: 90%;
+  height: 100%;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  /* border: 1px solid black; */
 }
 
 .project-info {
@@ -54,8 +55,8 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: transparent;
-  height: 100%;
-  width: 55%;
+  height: 30%;
+  width: 90%;
   margin: 5px 5px 5px 5px;
 }
 
@@ -64,8 +65,8 @@
   text-align: left;
   height: 35px;
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 800;
+  color: black;
 }
 
 .project-info p {
@@ -74,8 +75,8 @@
   border-radius: 0;
   text-align: left;
   font-size: 0.8rem;
-  font-weight: 300;
-  color: #ffffff;
+  font-weight: 500;
+  color: black;
   text-align: justify;
   overflow: hidden;
   max-height: 140px;
@@ -91,7 +92,7 @@
   margin: 2px 5px;
   padding: 2px;
   border-radius: 100%;
-  color: #fff;
+  color: black;
 }
 
 .major-project-link i:hover {
@@ -104,24 +105,27 @@
   justify-content: left;
   align-items: flex-start;
   background: #2a6481;
-  background: conic-gradient(from 44deg, #024d62, #505252);
+  background: conic-gradient(from 0deg, #f1ca9c, rgb(244, 207, 207));
 
   padding: 10px;
   margin: 10px 10px;
   border-radius: 10px;
-  color: aliceblue;
+  color: black;
+
   position: relative;
 }
 
 .mini-project-container:hover {
-  box-shadow: 0 0 10px #df9114;
+  /* box-shadow: 0 0 10px #df9114; */
   /* Glow effect */
+  border-bottom: 3px solid blue;
 }
 
 .mini-project-container img {
   width: 100%;
   height: 180px;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .mini-project-container span {
@@ -130,6 +134,7 @@
   margin: 10px 0px;
   /* width: 200px; */
   text-align: left;
+  font-weight: 700;
 }
 
 .mini-project-container p {
@@ -138,7 +143,8 @@
   width: 250px;
   /* overflow: hidden; */
   /* height: 50px; */
-  color: rgb(221, 198, 155);
+  color: black;
+  font-weight: 600;
 }
 
 .project-link {

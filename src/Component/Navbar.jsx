@@ -106,7 +106,7 @@ const Navbar = () => {
       <WhatIDo />
       <div className="heading-cont-key" id="skill">
         <h2 className="heading-div">Skills</h2>
-        <p className="heading-cont-div">
+        <p className="heading-cont-about">
           I believe that technology is advancing rapidly and is regularly
           updated. Therefore, I like to immerse myself in the latest tools and
           technologies to stay ahead of the curve and enhance my capabilities.
@@ -116,7 +116,7 @@ const Navbar = () => {
       <Skills />
       <div className="heading-cont-key" id="experience">
         <h2 className="heading-div">Experience</h2>
-        <p className="heading-cont-div">
+        <p className="heading-cont-about">
           I began my journey with a well-established company where I worked as a
           frontend developer. During this time, I gained experience working with
           agile methodologies. Additionally, I have contributed to small
@@ -126,7 +126,7 @@ const Navbar = () => {
       <Experience />
       <div className="heading-cont-key" id="project">
         <h2 className="heading-div">Projects</h2>
-        <p className="heading-cont-div">
+        <p className="heading-cont-about">
           In my free time, I enhance my skills by creating new projects. My
           belief lies in learning new tools and technologies through
           project-based learning. I regularly develop projects and integrate new

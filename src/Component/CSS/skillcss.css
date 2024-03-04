@@ -35,12 +35,13 @@
   padding: 5px 10px;
   margin: 5px 10px;
   background: #2a6481;
-  background: conic-gradient(from 60deg, #024d62, #505252);
+  background: conic-gradient(from 60deg, #d9ba83, #f28c8c);
   border-radius: 10px;
 }
 
 .ks-container:hover {
-  box-shadow: 0 0 5px #df9114;
+  box-shadow: 0 0 5px #000000;
+  border-bottom: 2px solid blue;
 }
 .ks-container img {
   width: 1rem;
@@ -50,7 +51,7 @@
 }
 
 .ks-container span {
-  color: #efecec;
+  color: #000000;
   font-weight: 500;
   font-size: 1rem;
 }

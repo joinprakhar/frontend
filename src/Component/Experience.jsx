@@ -24,7 +24,7 @@ const Experience = () => {
         <img src={exp} alt="" />
       </div>
       <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
-        <div className="company-cont">
+        <div className="company-cont" onClick={() => showAcc("itdose")}>
           <div className="company-details">
             <span className="comp-name">ItDose Infosystem</span>
             <span className="comp-post">Software Developer (React.Js)</span>
@@ -37,9 +37,11 @@ const Experience = () => {
           <div className="company-details">
             <span>&nbsp;</span>
             <span>
-              <h4
+              <button
                 style={{
                   margin: "5px 2px",
+                  padding: "5px",
+                  border: "none",
                   textAlign: "center",
                   cursor: "pointer",
                   backgroundColor: "white",
@@ -47,7 +49,6 @@ const Experience = () => {
                   color: "black",
                   width: "100%",
                 }}
-                onClick={() => showAcc("itdose")}
               >
                 Details&nbsp;&nbsp;
                 {show.id === "itdose" && show?.show === true ? (
@@ -55,7 +56,7 @@ const Experience = () => {
                 ) : (
                   <i class="fa fa-angle-down" style={{}}></i>
                 )}
-              </h4>
+              </button>
             </span>
           </div>
           {show.id === "itdose" && show?.show === true && (
@@ -64,7 +65,7 @@ const Experience = () => {
             </Modal>
           )}
         </div>
-        <div className="company-cont">
+        <div className="company-cont" onClick={() => showAcc("comp1")}>
           <div className="company-details">
             <span className="comp-name">Infosyselite Technologies</span>
             <span className="comp-post">Front-End Developer</span>
@@ -76,9 +77,11 @@ const Experience = () => {
           <div className="company-details">
             <span>&nbsp;</span>
             <span>
-              <h4
+              <button
                 style={{
                   margin: "5px 2px",
+                  padding: "5px",
+                  border: "none",
                   textAlign: "center",
                   cursor: "pointer",
                   backgroundColor: "white",
@@ -86,7 +89,6 @@ const Experience = () => {
                   color: "black",
                   width: "100%",
                 }}
-                onClick={() => showAcc("comp1")}
               >
                 Details&nbsp;&nbsp;
                 {show.id === "comp1" && show?.show === true ? (
@@ -94,7 +96,7 @@ const Experience = () => {
                 ) : (
                   <i class="fa fa-angle-down" style={{}}></i>
                 )}
-              </h4>
+              </button>
             </span>
           </div>
 

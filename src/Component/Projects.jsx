@@ -69,7 +69,10 @@ function MajorProjects({ ele }) {
       >
         <ProjectDetailModal data={show.data} />
       </Modal>
-      <div className="project-box">
+      <div
+        className="project-box"
+        onClick={() => setShow((show) => ({ ...show, show: true, data: ele }))}
+      >
         <div className="project-image">
           <img src={ele?.image[0]} alt="" />
         </div>
@@ -88,7 +91,7 @@ function MajorProjects({ ele }) {
               <i title="Deployement" class="fa fa-laptop"></i>
             </a>
             <i
-              title="Deployement"
+              title="Details"
               class="fa fa-external-link-square"
               onClick={() =>
                 setShow((show) => ({ ...show, show: true, data: ele }))

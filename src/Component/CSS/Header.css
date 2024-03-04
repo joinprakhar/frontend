@@ -56,7 +56,7 @@
   height: 350px;
 
   background: #cee7ee;
-  background: conic-gradient(from 44deg, #cee7ee, #fcfcfc);
+  background: conic-gradient(from 44deg, #f1ca9c, #fcfcfc);
   display: flex;
   justify-content: center;
   align-items: center;
