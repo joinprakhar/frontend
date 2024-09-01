@@ -67,11 +67,11 @@ const Experience = () => {
         </div>
         <div className="company-cont" onClick={() => showAcc("comp1")}>
           <div className="company-details">
-            <span className="comp-name">Infosyselite Technologies</span>
+            <span className="comp-name">Wenedi Technologies</span>
             <span className="comp-post">Front-End Developer</span>
           </div>
           <div className="company-profile">
-            <span>Okhla, New Delhi </span>
+            <span>New Delhi </span>
             <span>Jan 2022 - July 2023</span>
           </div>
           <div className="company-details">
